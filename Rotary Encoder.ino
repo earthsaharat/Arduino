@@ -26,7 +26,7 @@ void loop(){
   else if(a1 == 1 && a2 == 0) now = 1;
   else if(a1 == 1 && a2 == 1) now = 2;
 
-  if(now != previous){ // check rotate
+  if(now != previous){ // check rotating
     if(previous == 2 && now == 1){count++;sign=0;}
     if(previous == 1 && now == 0){count++;sign=0;}
     if(previous == 2 && now == 0){count--;sign=1;}
@@ -41,6 +41,7 @@ void loop(){
 }
 
 void changeValue(){
-  // use "count" for check step fo rotate
+  // use "count"  for check step of rotation
+  // use "sign"   for check direction of retation
   Serial.println(count);
 }
