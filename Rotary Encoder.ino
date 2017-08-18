@@ -3,12 +3,10 @@
 void setup() {
   Serial.begin(9600);
   
-  pinMode(2,OUTPUT);  // rotary A pin
-  pinMode(3,OUTPUT);  // rotary B pin
+  pinMode(2,INPUT);  // rotary A pin
+  pinMode(3,INPUT);  // rotary B pin
 
 }
-
-int i;
 
 int previous;   // previous pattern
 int now;        // current patten
